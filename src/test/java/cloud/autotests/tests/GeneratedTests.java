@@ -21,7 +21,7 @@ public class GeneratedTests extends TestBase {
         });
 
         step("Check search", () -> {
-            $(".c-input__field").shouldBe(visible);
+            $("#search").shouldBe(visible);
         });
     }
 
