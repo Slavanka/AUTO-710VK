@@ -5,8 +5,8 @@ import io.qameta.allure.Description;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.title;
+import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -17,11 +17,11 @@ public class GeneratedTests extends TestBase {
     @DisplayName("Common page elements")
     void generatedTest() {
         step("Open https://hoff.ru/", () -> {
-            step("// todo: just add selenium action");
+            open("https://hoff.ru/");
         });
 
         step("Check search", () -> {
-            step("// todo: just add selenium action");
+            $(".c-input__field").shouldBe(visible);
         });
     }
 
