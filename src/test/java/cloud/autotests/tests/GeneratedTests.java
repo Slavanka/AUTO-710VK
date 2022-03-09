@@ -21,8 +21,8 @@ public class GeneratedTests extends TestBase {
             open("https://hoff.ru/");
         });
 
-        step("Check search", () -> {
-            $(".second-row row o-container-grid").shouldBe(visible);
+        step("Check come in", () -> {
+            $(".c-auth-text").shouldBe(visible);
         });
     }
 
