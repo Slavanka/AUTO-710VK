@@ -22,7 +22,7 @@ public class GeneratedTests extends TestBase {
         });
 
         step("Check search", () -> {
-            $("#data-v-201db196").shouldBe(visible);
+            $(".second-row").shouldBe(visible);
         });
     }
 
